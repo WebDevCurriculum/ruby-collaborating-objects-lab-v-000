@@ -3,18 +3,26 @@ require 'pry'
 class Artist
 # create attr_accessor :name 
   attr_accessor :name
+  @@all = []
 # create instance variable to keep track of songs
-  @songs = []
 # create initialize method with argument (name) 
   def initialize(name)
     @name = name
+    @songs = [] # create instance variable to keep track of songs 
+    # **REMEMBER - instance variables need to be created inside of a method (instance)
   end 
-# create songs method - keeps track of songs  
-  def songs
+
+  def add_song(song) # once song instance has been created this method should add the songs to the @songs array
+    @songs << song
+  end 
+  
+  def songs # this method should display songs in current @songs array - keeps track of songs
     @songs
   end 
 # create save method 
-
+  def save 
+    
+  end 
 # create class method for .find_or_create_by_name
 # this method creates a new instance of an Artist if none exists 
 
