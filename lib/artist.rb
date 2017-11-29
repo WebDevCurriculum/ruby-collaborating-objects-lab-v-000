@@ -29,8 +29,14 @@ class Artist
     @@all << self 
   end 
 # create class method for .find_or_create_by_name
-  def self.find_or_create_by_name
+  def self.find_or_create_by_name(name)
 # this method creates a new instance of an Artist if none exists 
+    binding.pry
+    if name
+      self.name
+    else
+      artist = Artist.new(name)
+    end 
   end 
 
 # create print_songs method 
