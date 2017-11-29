@@ -42,12 +42,16 @@ class Artist
 #    end 
     check_artist || Artist.new(name)
   end 
-
 # create print_songs method 
  # should return all of artist songs - contents of @@all array 
   
   def print_songs 
-    @@all
+    # show song instance 
+    # grab name from song instance 
+   
+    @songs.find do |new_song| 
+      puts new_song.name 
+    end
   end 
 
 end 

@@ -20,6 +20,7 @@ describe 'Song' do
       new_artist_object = Artist.new('King of Pop')
       song.artist = new_artist_object
       expect(song.artist).to eq(new_artist_object)
+      
     end
   end
 
