@@ -19,13 +19,15 @@ class Artist
   def songs # this method should display songs in current @songs array - keeps track of songs
     @songs
   end 
+  
 # create all method - not sure what it does yet 
-  def all  
-    
+  def self.all  
+    @@all
   end 
 # create save method 
-  def save 
+  def save
     
+    @@all
   end 
 # create class method for .find_or_create_by_name
 # this method creates a new instance of an Artist if none exists 
