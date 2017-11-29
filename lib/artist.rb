@@ -48,10 +48,12 @@ class Artist
   def print_songs 
     # show song instance 
     # grab name from song instance 
-   
+    # return song name
     @songs.find do |new_song| 
       puts new_song.name 
     end
   end 
+  
+  
 
 end 
