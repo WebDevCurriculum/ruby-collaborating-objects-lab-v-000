@@ -31,14 +31,23 @@ class Artist
 # create class method for .find_or_create_by_name
   def self.find_or_create_by_name(name)
 # this method creates a new instance of an Artist if none exists 
-    binding.pry
-    if name
-      self.name
-    else
-      artist = Artist.new(name)
-    end 
+    
+  # iterate over @@all to check if an artist exists 
+    check_artist = @@all.find {|artist| artist.name == name} # this will either return the object or nil 
+      
+#    if check_artist
+#      check_artist
+#    else
+#      artist = Artist.new(name)
+#    end 
+    check_artist || Artist.new(name)
   end 
 
 # create print_songs method 
+ # should return all of artist songs - contents of @@all array 
+  
+  def print_songs 
+    @@all
+  end 
 
 end 
