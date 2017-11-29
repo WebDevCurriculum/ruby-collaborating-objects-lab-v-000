@@ -19,6 +19,10 @@ class Artist
   def songs # this method should display songs in current @songs array - keeps track of songs
     @songs
   end 
+# create all method - not sure what it does yet 
+  def all  
+    
+  end 
 # create save method 
   def save 
     
