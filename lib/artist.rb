@@ -25,12 +25,13 @@ class Artist
     @@all
   end 
 # create save method 
-  def save
-    
-    @@all
+  def save # should add the artist object/instance to the @@all array  
+    @@all << self 
   end 
 # create class method for .find_or_create_by_name
+  def self.find_or_create_by_name
 # this method creates a new instance of an Artist if none exists 
+  end 
 
 # create print_songs method 
 
