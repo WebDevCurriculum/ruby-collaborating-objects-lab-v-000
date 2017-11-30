@@ -19,7 +19,10 @@ require 'pry'
       # Get file names from mp3 folder 
       # add to @@music_files array
       # print filename only without path
-      @@music_files << Dir.entries("../db/mp3s")
+     mp3_files = @@music_files.collect do |new_files|
+       binding.pry
+        new_files << Dir.entries(@music_path)
+     end
       #@@music_files << self.music_path
     # - what does this method do - displays the file_name/type but does not display the file path 
     # - what does this method return - a String of mp3 file 
