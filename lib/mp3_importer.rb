@@ -15,12 +15,12 @@ require 'pry'
     end 
 # create files method 
     def files
-     # add all files from mp3 folder to @@path array
-      # access files from mp3 folder
-      # add to @@path array
-      binding.pry
-      File.read(@music_path)
-      @@music_files << self.music_path
+      # Google - list of file names from directory  - 
+      # Get file names from mp3 folder 
+      # add to @@music_files array
+      # print filename only without path
+      Dir["../db/to/search/*"]
+      #@@music_files << self.music_path
     # - what does this method do - displays the file_name/type but does not display the file path 
     # - what does this method return - a String of mp3 file 
     end
