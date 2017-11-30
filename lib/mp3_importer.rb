@@ -19,6 +19,7 @@ require 'pry'
       # access files from mp3 folder
       # add to @@path array
       binding.pry
+      File.read(@music_path)
       @@music_files << self.music_path
     # - what does this method do - displays the file_name/type but does not display the file path 
     # - what does this method return - a String of mp3 file 
