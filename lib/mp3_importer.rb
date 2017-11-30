@@ -1,6 +1,6 @@
 require 'pry'
 # create MP3Importer class 
-
+  class MP3Importer 
 # create initialize method w/ argument (music_path)
 
 # create files method 
@@ -9,3 +9,4 @@ require 'pry'
 # create an import method 
   # add files to @@all array 
   # creates songs from a filenmae 
+  end 
