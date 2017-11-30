@@ -22,6 +22,10 @@ require 'pry'
       mp3_music
     end
 # create an import method 
-  # add files to @@all array 
-  # creates songs from a filenmae 
+
+      def import
+  # creates songs from a filename 
+      
+      
+      end
   end 
