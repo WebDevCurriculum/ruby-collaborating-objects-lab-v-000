@@ -25,7 +25,6 @@ require 'pry'
       def import
   # this method is creating a song from filename
         # Sends filename to the Song class
-       binding.pry
         files.uniq do |f| 
           Artist.all << f
         end 
