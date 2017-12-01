@@ -1,4 +1,5 @@
 require 'pry'
+
 # create MP3Importer class 
   class MP3Importer
     attr_accessor :music_path
@@ -24,8 +25,13 @@ require 'pry'
 # create an import method 
 
       def import
-  # creates songs from a filename 
-      
+  # this method is creating a song from filename
+        # Sends filename to the Song class
+        
+        file = Dir.entries("./db/mp3s")
+        Song.new_by_filename()
+       
+        Artist.class_variable_get(@@all)
       
       end
   end 
