@@ -2,7 +2,7 @@ require 'pry'
 # create class Artist
 class Artist
 # create attr_accessor :name 
-  attr_accessor :name
+  attr_accessor :name, :songs
   @@all = []
 # create instance variable to keep track of songs
 # create initialize method with argument (name) 
@@ -15,10 +15,7 @@ class Artist
   def add_song(song) # once song instance has been created this method should add the songs to the @songs array
     @songs << song
   end 
-  
-  def songs # this method should display songs in current @songs array - keeps track of songs
-    @songs
-  end 
+   
   
 # create all method - not sure what it does yet 
   def self.all  

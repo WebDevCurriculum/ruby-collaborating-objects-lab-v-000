@@ -3,11 +3,9 @@ require 'pry'
 # create MP3Importer class 
   class MP3Importer
     attr_accessor :music_path
-    @@music_files = []
 # create initialize method w/ argument (music_path)
     def initialize(music_path)
       @music_path = music_path
-      @@music_files = []
     end
     
 # create path method 
@@ -27,11 +25,22 @@ require 'pry'
       def import
   # this method is creating a song from filename
         # Sends filename to the Song class
+       binding.pry
+        files.uniq do |f| 
+          Artist.all << f
+        end 
+#        
+#      Artist.all << songs = files.find do |filename| 
+#          Song.new_by_filename(filename)
+#          
+        end
+        #songs = files.keep_if {|all_songs|(all_songs)}
         
-        file = Dir.entries("./db/mp3s")
-        Song.new_by_filename()
-       
-        Artist.class_variable_get(@@all)
+        
+#        songs.find do |all_songs|
+#          all_songs.new_by_filename(all_songs)
+#        end
+        # add songs to @@all array
       
-      end
+      
   end 
